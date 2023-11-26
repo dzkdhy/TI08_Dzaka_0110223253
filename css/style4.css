@@ -1,0 +1,46 @@
+        body{
+            margin: 0;
+            padding: 0;
+            background: pink;
+        }
+        .bg {
+            background: pink;
+            
+        }
+        .header{
+            text-align: center;
+            background: aquamarine;
+            height: 10vh;
+            margin: 10px 20px;
+        }
+        .container{
+            display: flex;
+        }
+        .aside{
+            text-align: center;
+            width: 20%;
+            height: 70vh;
+            background: aqua;
+            margin: 10px 20px;
+        }
+        .main{
+            width: 80%;
+            display: flex;
+            background: #c75454;
+            margin: 10px 20px;
+        }
+        
+        .kotak{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .kotak img{
+            height: 50%;
+            width: 75%;
+        } 
+        .footer{
+            height: 10vh;
+            background: aquamarine;
+            margin: 10px 20px;
+        }

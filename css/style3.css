@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    margin: 5rem auto;
+}
+
+.grup1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.grup2 {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.a {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
