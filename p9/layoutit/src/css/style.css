@@ -1,0 +1,88 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item.logo {
+    margin-left: auto;
+}
+
+.card-title {
+    font-style: normal;
+}
+.card-text {
+    font-style: normal;
+}
+p {
+    font-style: normal;
+}
+.col-md-12 {
+    font-style: normal;
+    text-align: center;
+}
+
+.list-item {
+    font-style: normal;
+}
+.col-md-12 {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-item {
+            background-color: #98DED9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+.c1 {
+    font-style: normal;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.container {
+    width: 75%;
+    margin: 5rem auto;
+}
+
+.grup1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.grup2 {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.a {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jumbotron {
+    font-style: normal;
+}
