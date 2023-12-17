@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- NO.1 -->
+
+    <!-- <script>
+        const phi = 3.14
+        console.log("nilai PHI adalah" + phi)
+
+        let jari = 14;
+        console.log("nilai jari adalah" + jari)
+
+        let luas = phi * (jari * jari)
+        console.log("nilai luar lingkaran adalah" + luas)
+
+        let keliling = 2 * phi * jari
+        console.log("nilai keliling lingkaran adalah" + keliling)
+
+        function luas(jari){
+            let phi = 3.14 
+            let luas = phi * jari * jari
+            return luas
+        }.
+
+        function keliling(jari){
+            let phi = 3.14
+            let keliling = 2 * phi * jari
+            return keliling
+    </script> -->
+
+        <!-- NO.2 -->
+    <!-- <input type="number" name="money" id="money">
+    <select name="kurs" id="kurs">
+        <option value="usd">USD | Rp.15000</option>
+        <option value="eur">EUR | Rp.16000</option>
+        <option value="sgd">SGD | Rp.11600</option>
+    </select>
+    <button id="hitung">Convert</button>
+
+    <p id="result">Hasil</p>
+
+    <script>
+        const money = document.querySelector("#money")
+        const kurs = document.querySelector("#kurs")
+        const result = document.querySelector("#result")
+        const btn = document.querySelector("#hitung")
+
+        btn.addEventListener('click', function() {
+            if(kurs.value == "usd") {
+                result.innerHTML = "Hasil: Rp." + money.value * 15000
+            }
+            else if(kurs.value == "eur") {
+                result.innerHTML = "Hasil: Rp." + money.value * 16000
+            }
+            else {
+                result.innerHTML = "Hasil: Rp." + money.value * 11600
+            }
+        })
+    </script> -->
+
+        <!-- N0.3 -->
+        <!-- <label for="jamMasuk">In Kendaraan: </label>
+        <input type="number" id="jamMasuk" name="jamMasuk">
+        <br />
+        <br />
+        <label for="jamKeluar">Out Kendaraan: </label>
+        <input type="number" id="jamKeluar" name="jamKeluar">
+    
+        <button onclick="hitungBiaya()">Hitung Biaya Parkir</button>
+    
+        <p>Biaya Parkir: <span id="biayaParkir"></span></p>
+    
+        <script>
+            function hitungBiaya() {
+                const jamMasuk = parseFloat(document.getElementById("jamMasuk").value);
+                const jamKeluar = parseFloat(document.getElementById("jamKeluar").value);
+    
+                const biayaAwal = 3000;
+                const biayaPerjam = 1000;
+    
+                const lamaParkir = jamKeluar - jamMasuk;
+                let biayaTotal = biayaAwal;
+    
+                if (lamaParkir > 2) {
+                    biayaTotal += (lamaParkir - 2) * biayaPerjam;
+                }
+    
+                document.getElementById("biayaParkir").innerText = biayaTotal;
+            }
+        </script> -->
+
+        <!-- No.4 -->
+
+                <label for="bilangan1">Bil 1:</label>
+                <input type="number" id="bilangan1" onchange="hitungJumlah()">
+                
+                <label for="bilangan2">Bil 2:</label>
+                <input type="number" id="bilangan2">
+                <button onclick="hitungJumlah()">Hasil Jumlah Bilangan</button>
+
+
+                <p>Hasil Jumlah: <span id="hasil"></span></p>
+
+                <script>
+                    function hitungJumlah() {
+                    // Ambil nilai dari kedua input
+                    const bilangan1 = parseFloat(document.getElementById('bilangan1').value);
+                    const bilangan2 = parseFloat(document.getElementById('bilangan2').value);
+
+                    
+                    const jumlah = bilangan1 + bilangan2;
+
+                    document.getElementById('hasil').textContent = jumlah;
+                    }
+                </script>
+</body>
+</html>
