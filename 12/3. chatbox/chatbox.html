@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbox</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #containerbox {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      max-width: 300px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    #chatbox {
+      height: 200px;
+      overflow-y: auto;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    #input-messages {
+      width: calc(100% - 16px);
+      padding: 8px;
+      border: none;
+      border-top: 10px solid #ddd;
+    }
+
+    #send-bttn {
+      width: 100%;
+      padding: 8px;
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="containerbox">
+        <div id="chatbox"></div>
+        <input type="text" id="input-messages" placeholder="Type your message...">
+        <button id="send-bttn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+        var inputBox = document.getElementById("input-messages");
+        var chatBox = document.getElementById("chatbox");
+
+        var text = inputBox.value.trim();
+
+        if (text !== "") {
+            var message = document.createElement("div");
+            message.textContent = text;
+            chatBox.appendChild(message);
+
+            inputBox.value = "";
+        }
+        }
+    </script>
+
+</body>
+</html>

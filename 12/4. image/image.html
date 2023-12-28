@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <body>
+        <select id="Photo" onchange="Changes_Photos()">
+          <option value="">Choose Your Fighter</option>
+          <option value="./gambar/a.jpg">Windah Batubara</option>
+          <option value="./gambar/b.jpg">Mas Roni</option>
+          <option value="./gambar/c.jpeg">Igun Putri Ayah</option>
+          <option value="./gambar/d.jpg">Gak Bisa Mas</option>
+        </select>
+        <br />
+        <br />
+
+    <img id="box_photo" src="" alt="Choose " />
+
+<script>
+    function Changes_Photos() {
+    let ChoosePhoto = document.getElementById("Photo").value;     
+
+    document.getElementById("box_photo").src = ChoosePhoto;
+  }
+</script>
+</body>
+</html>
